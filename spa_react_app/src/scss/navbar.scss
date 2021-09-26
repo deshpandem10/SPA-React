@@ -1,0 +1,16 @@
+
+@import './main.scss';
+
+.navbar {
+    background-color: blue;
+    list-style: none;
+    display: flex;
+
+    li {
+        margin: 1rem;
+
+        a {
+            color: #fff !important;
+        }
+    }
+}

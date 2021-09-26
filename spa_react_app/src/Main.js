@@ -9,13 +9,15 @@ import Home from './Home';
 import Stuff from './Stuff';
 import Contact from './Contact';
 
+import './scss/navbar.scss';
+
 class Main extends Component {
     render() {
       return (
         <HashRouter>
             <div>
                 <h1>Simple SPA</h1>
-                <ul>
+                <ul class="navbar">
                     <li>
                         <NavLink to="/">Home</NavLink>
                     </li>
@@ -28,7 +30,7 @@ class Main extends Component {
                 </ul>
                 
                 <div className="content">
-                    <Route path="/" component={Home}/>
+                    <Route exact path="/" component={Home}/>
                     <Route path="/stuff" component={Stuff}/>
                     <Route path="/contact" component={Contact}/>
                 </div>
@@ -36,6 +38,6 @@ class Main extends Component {
         </HashRouter>
       );
     }
-  }
+}
 
 export default Main;
