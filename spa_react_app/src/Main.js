@@ -9,6 +9,8 @@ import Home from './Home';
 import Stuff from './Stuff';
 import Contact from './Contact';
 
+import logo from './assets/resources/jstudio_transparentBK.PNG';
+
 import './scss/navbar.scss';
 
 class Main extends Component {
@@ -16,19 +18,27 @@ class Main extends Component {
       return (
         <HashRouter>
             <div>
-                <h1>Simple SPA</h1>
-                <ul class="navbar">
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/stuff">Stuff</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact">Contact</NavLink>
-                    </li>
-                </ul>
-                
+                <header className="header mb-5">
+                    <div className="container-fluid d-flex align-ietms-center justify-content-between">
+                        <a href="" className="logo">
+                            <img src={logo} alt="logo"/>
+                        </a>
+                        <ul className="navbar">
+                            <li>
+                                <NavLink to="/">Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/stuff">Stuff</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/contact">Contact</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+
+                <div className="clear"></div>
+
                 <div className="content">
                     <Route exact path="/" component={Home}/>
                     <Route path="/stuff" component={Stuff}/>

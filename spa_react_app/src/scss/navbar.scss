@@ -1,16 +1,38 @@
 
 @import './main.scss';
 
+.logo {
+    img {
+        height: 5rem;
+    }
+}
+
 .navbar {
-    background-color: blue;
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    border: none;
+    box-shadow: none !important;
 
     li {
         margin: 1rem;
 
         a {
-            color: #fff !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #d33396;
+            text-decoration: none;
+            font-family: "Poppins";
+            font-size: 1rem;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+        a.active {
+            color: #41215b !important;
         }
     }
 }
