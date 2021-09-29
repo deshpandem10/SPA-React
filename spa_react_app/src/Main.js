@@ -9,7 +9,7 @@ import Home from './Home';
 import Stuff from './Stuff';
 import Contact from './Contact';
 
-import logo from './assets/resources/jstudio_transparentBK.PNG';
+import logo from './assets/resources/logo_transprntbk.png';
 
 import './scss/navbar.scss';
 
@@ -20,7 +20,7 @@ class Main extends Component {
             <div>
                 <header className="header mb-5">
                     <div className="container-fluid d-flex align-ietms-center justify-content-between">
-                        <a href="" className="logo">
+                        <a href="" className="logo my-auto">
                             <img src={logo} alt="logo"/>
                         </a>
                         <ul className="navbar">

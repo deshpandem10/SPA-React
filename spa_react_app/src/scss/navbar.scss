@@ -3,36 +3,42 @@
 
 .logo {
     img {
-        height: 5rem;
+        height: 2.5rem;
     }
 }
 
-.navbar {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    border: none;
-    box-shadow: none !important;
+.header {
+    box-shadow: 1px 2px 9px -1px rgba(194,194,194,0.82);
+    -webkit-box-shadow: 1px 2px 9px -1px rgba(194, 194, 194, 0.82);
+    -moz-box-shadow: 1px 2px 9px -1px rgba(194,194,194,0.82);
 
-    li {
-        margin: 1rem;
-
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: #d33396;
-            text-decoration: none;
-            font-family: "Poppins";
-            font-size: 1rem;
-            font-weight: 600;
-            white-space: nowrap;
-            transition: 0.3s;
-        }
-        a.active {
-            color: #41215b !important;
+    ul.navbar {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        border: none;
+        box-shadow: none !important;
+    
+        li {
+            margin: 1rem;
+    
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: #d33396;
+                text-decoration: none;
+                font-family: "Poppins";
+                font-size: 1rem;
+                font-weight: 600;
+                white-space: nowrap;
+                transition: 0.3s;
+            }
+            a.active {
+                color: #41215b !important;
+            }
         }
     }
 }
