@@ -12,6 +12,10 @@
     -webkit-box-shadow: 1px 2px 9px -1px rgba(194, 194, 194, 0.82);
     -moz-box-shadow: 1px 2px 9px -1px rgba(194,194,194,0.82);
 
+    position: sticky;
+    top: 0;
+    background: #fff;
+
     ul.navbar {
         list-style: none;
         display: flex;
@@ -30,7 +34,6 @@
                 justify-content: space-between;
                 color: #d33396;
                 text-decoration: none;
-                font-family: "Poppins";
                 font-size: 1rem;
                 font-weight: 600;
                 white-space: nowrap;

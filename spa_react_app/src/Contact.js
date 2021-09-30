@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render () {
         return (
-            <div>
+            <div className="container">
                 <h1>This is Contact page</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros sapien, laoreet nec ligula quis, gravida accumsan nulla. 

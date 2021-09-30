@@ -27,3 +27,20 @@ html {
         font-size: 3.25vw;
     }
 }
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.content {
+    height: 100vh;
+    background: #fbfbfb;
+    z-index: -1;
+    position: relative;
+
+    .container {
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+    }
+}

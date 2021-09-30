@@ -18,7 +18,7 @@ class Main extends Component {
       return (
         <HashRouter>
             <div>
-                <header className="header mb-5">
+                <header className="header">
                     <div className="container-fluid d-flex align-ietms-center justify-content-between">
                         <a href="" className="logo my-auto">
                             <img src={logo} alt="logo"/>
@@ -39,7 +39,7 @@ class Main extends Component {
 
                 <div className="clear"></div>
 
-                <div className="content">
+                <div className="content pt-5">
                     <Route exact path="/" component={Home}/>
                     <Route path="/stuff" component={Stuff}/>
                     <Route path="/contact" component={Contact}/>
