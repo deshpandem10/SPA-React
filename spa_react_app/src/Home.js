@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
+import {Card, Button} from 'react-bootstrap';
+
+import './scss/home.scss';
 
 class Home extends Component {
     render() {
+
+        function handleCardClick() {
+            console.log('you clicked a card');
+        }
+
         return (
             <div className="container">
                 <h1>This is Home page</h1>
@@ -13,6 +21,31 @@ class Home extends Component {
                 <p>
                     Aliquam vel scelerisque est. Maecenas blandit tellus sed risus pretium viverra. Vestibu
                 </p>
+
+                <div className="d-flex card-set mt-5">
+                    <Card className="mini-card" onClick={handleCardClick}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                    <Card className="mini-card">
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
             </div>
         );
     }
