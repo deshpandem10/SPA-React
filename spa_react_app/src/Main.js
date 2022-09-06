@@ -20,9 +20,9 @@ class Main extends Component {
             <div>
                 <header className="header">
                     <div className="container-fluid d-flex align-ietms-center justify-content-between">
-                        <a href="" className="logo my-auto">
+                        {/* <a href="" className="logo my-auto">
                             <img src={logo} alt="logo"/>
-                        </a>
+                        </a> */}
                         <ul className="navbar">
                             <li>
                                 <NavLink to="/">Home</NavLink>
