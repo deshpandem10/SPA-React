@@ -1,46 +1,24 @@
 
-html {
+* {
+    box-sizing: border-box;
+    unicode-bidi: embed;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
     font-size: 16px;
-    font-size: 0.875vw;
+    font-size: 1rem;
+    background: #f2f5f7;
+    color: #292827;
 }
 
-@media (max-width: 1199px) {
-    html {
-        font-size: 1vw;
-    }
-}
-
-@media (max-width: 1024px) {
-    html {
-        font-size: 1.5vw;
-    }
-}
-
-@media (max-width: 767px) {
-    html {
-        font-size: 2.25vw;
-    }
-}
-
-@media (max-width: 600px) {
-    html {
-        font-size: 3.25vw;
-    }
-}
-
-body {
-    font-family: 'Poppins', sans-serif !important;
-}
-
-.content {
-    height: 100vh;
-    background: #fbfbfb;
-    z-index: -1;
+[data-grid~="container"] {
+    max-width: calc(1920px + 10%);
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
     position: relative;
-
-    .container {
-        background: #fff;
-        border-radius: 0.5rem;
-        padding: 1.5rem;
-    }
+    min-height: 100vh;
 }
