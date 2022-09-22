@@ -4,11 +4,13 @@
 
 The project involves use of **SASS / SCSS** for styling to maintain the consistency of the styles throughout and to make it easier to style the elements and the children using nesting feature of SASS/SCSS.
 
-The project also involves use of **Bootstrap 4 & Material Design** for making it easier to use Bootstrap classes for the element.
+```npm install sass --save-dev```
 
-**Bootstrap 4 & Material Design** can be very easily installed using Terminal window.
+The project also involves use of **React-Bootstrap 5.1.1**.
 
-```npm install --save mdbreact```
+**Bootstrap** can be very easily installed using Terminal window.
+
+```npm install react-bootstrap bootstrap```
 
 Once the MDB React is installed from terminal window, we need to import the following dependencies in **src/index.js** file :
 
@@ -17,3 +19,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
 ```
+
+**Typewriter Effect** is a simple typing animation in ReactJS. We need to install the typewriter-effect package for achieving it.
+
+```npm install --save typewriter-effect```
+
+Once installed, we can import the Typewriter from 'typewriter-effect'
