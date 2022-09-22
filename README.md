@@ -22,7 +22,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 **React Typing Effect** is a simple typing animation in ReactJS. We need to install the package for achieving it.
 
-```npm install --save react-typing-effect```
+```npm i react-typewriter-effect```
 
 Once installed, we can import the ReactTypingEffect from 'react-typing-effect'
 ```
