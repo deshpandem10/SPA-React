@@ -25,3 +25,6 @@ import 'mdbreact/dist/css/mdb.css';
 ```npm install --save typewriter-effect```
 
 Once installed, we can import the Typewriter from 'typewriter-effect'
+```
+import Typewriter from "typewriter-effect";
+```
