@@ -20,11 +20,11 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 ```
 
-**Typewriter Effect** is a simple typing animation in ReactJS. We need to install the typewriter-effect package for achieving it.
+**React Typing Effect** is a simple typing animation in ReactJS. We need to install the package for achieving it.
 
-```npm install --save typewriter-effect```
+```npm install --save react-typing-effect```
 
-Once installed, we can import the Typewriter from 'typewriter-effect'
+Once installed, we can import the ReactTypingEffect from 'react-typing-effect'
 ```
-import Typewriter from "typewriter-effect";
+import ReactTypingEffect from "react-typing-effect";
 ```
