@@ -19,6 +19,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
 ```
+---
 
 **React Typing Effect** is a simple typing animation in ReactJS. We need to install the package for achieving it.
 
@@ -28,3 +29,23 @@ Once installed, we can import the ReactTypingEffect from 'react-typing-effect'
 ```
 import ReactTypingEffect from "react-typing-effect";
 ```
+
+**AOS Animations** -
+
+```npm install aos --save```
+
+```
+import AOS from 'aos';
+
+(for class components)
+componentDidMount() {
+  AOS.init();
+}
+
+(for functional components)
+useEffect(() => {
+  AOS.init();
+}, []);
+```
+
+Make sure to add ```import "aos/dist/aos.css";``` in index.js
