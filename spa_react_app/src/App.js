@@ -7,15 +7,16 @@ import {
 
 import Container from 'react-bootstrap/Container';
 
-import Home from './Home';
-import Stuff from './Stuff';
-import Contact from './Contact';
+import Home from './contents/Home';
+import About from './contents/About';
+import Experience from './contents/Experience';
+import Contact from './contents/Contact';
 
 import logo from './assets/resources/logo_transprntbk.png';
 
-import './scss/navbar.scss';
+import './assets/scss/navbar.scss';
 
-class Main extends Component {
+class App extends Component {
     componentDidMount() {
         /**
          * Easy selector helper function
@@ -53,7 +54,7 @@ class Main extends Component {
         /**
          * Toggle .header-scrolled class to #header when page is scrolled
          */
-        let selectHeader = select('#header')
+        let selectHeader = select('header')
         if (selectHeader) {
             const headerScrolled = () => {
                 if (window.scrollY > 100) {
@@ -71,39 +72,43 @@ class Main extends Component {
       return (
         <HashRouter>
             <div>
-                <header className="header" id="header">
-                    <Container>
-                        <div className="d-flex align-ietms-center justify-content-between">
-                            <div href="" className="logo my-auto">
-                                {/* <img src={logo} alt="logo"/> */}
-                                <h4>Lorem Ipsum</h4>
-                            </div>
-                            <ul className="navbar">
-                                <li>
-                                    <NavLink to="/">Home</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/stuff">Stuff</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/contact">Contact</NavLink>
-                                </li>
-                            </ul>
+                <Container>
+                    <header>
+                        <div href="" className="logo my-auto">
+                            {/* <img src={logo} alt="logo"/> */}
+                            <h4>Lorem Ipsum</h4>
                         </div>
-                    </Container>
-                </header>
+                        <ul className="navbar">
+                            <li>
+                                <NavLink to="/home" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/expedu" className={({ isActive }) => isActive ? "active" : ""}>Work Experience &amp; Education</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
+                            </li>
+                        </ul>
+                    </header>
+                </Container>
 
                 <div className="clear"></div>
 
-                <div className="content pt-5">
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/stuff" component={Stuff}/>
-                    <Route path="/contact" component={Contact}/>
-                </div>
+                <Container>
+                    <div className="content">
+                        <Route exact path="/home" component={Home}/>
+                        <Route path="/about" component={About}/>
+                        <Route path="/expedu" component={Experience}/>
+                        <Route path="/contact" component={Contact}/>
+                    </div>
+                </Container>
             </div>
         </HashRouter>
       );
     }
 }
 
-export default Main;
+export default App;

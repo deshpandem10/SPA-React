@@ -7,18 +7,20 @@
     }
 }
 
-.header {
+header {
     transition: all 0.5s;
     z-index: 997;
     padding: 1.5rem 0 1.5rem 0;
     width: 100%;
+    display: flex !important;
+    justify-content: space-between;
     align-items: flex-end;
 
     .logo {
         h4 {
             margin-bottom: 0;
             font-weight: 600;
-            color: #565594;
+            color: #f5725c;
         }
     }
 
@@ -53,16 +55,21 @@
                 font-weight: 600;
                 white-space: nowrap;
                 transition: 0.3s;
-                color: #565594;
+                color: #f5725c;
                 text-transform: uppercase;
-                line-height: 2.5;
+                line-height: 2;
 
                 &:hover {
-                    text-decoration: underline;
+                    text-decoration: none;
+                }
+
+                &.active {
+                    border-bottom: 2px solid #f5725c;
                 }
             }
-            a.active {
-                color: darken(#565594, 30%);
+
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

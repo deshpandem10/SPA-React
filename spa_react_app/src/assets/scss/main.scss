@@ -9,8 +9,8 @@ html, body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
-    font-size: 1rem;
-    background: #f2f5f7;
+    font-size: 0.96rem;
+    background: #fff;
     color: #292827;
 }
 
@@ -21,4 +21,11 @@ html, body {
     padding-right: 0;
     position: relative;
     min-height: 100vh;
+}
+
+.content {
+    min-height: 65vh;
+    background: #fcfaff;
+    border-radius: 16px;
+    padding: 4rem 2rem;
 }
