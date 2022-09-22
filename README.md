@@ -12,7 +12,7 @@ The project also involves use of **React-Bootstrap 5.1.1**.
 
 ```npm install react-bootstrap bootstrap```
 
-Once the MDB React is installed from terminal window, we need to import the following dependencies in **src/index.js** file :
+Once installed from terminal window, we need to import the following dependencies in **src/index.js** file :
 
 ```
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
