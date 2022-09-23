@@ -99,7 +99,8 @@ class App extends Component {
 
                 <Container>
                     <div className="content">
-                        <Route exact path="/home" component={Home}/>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/home" component={Home}/>
                         <Route path="/about" component={About}/>
                         <Route path="/expedu" component={Experience}/>
                         <Route path="/contact" component={Contact}/>

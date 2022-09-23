@@ -9,9 +9,10 @@ html, body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
-    font-size: 0.96rem;
+    font-size: 1rem;
     background: #fff;
     color: #292827;
+    line-height: 1.5;
 }
 
 [data-grid~="container"] {
@@ -23,9 +24,19 @@ html, body {
     min-height: 100vh;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.5;
+}
+
 .content {
     min-height: 65vh;
-    background: #fcfaff;
+    background: #fffafa;
+    border: 1px solid #f3f3f3;
     border-radius: 16px;
     padding: 4rem 2rem;
+}
+
+.imgwrp {
+    border-radius: 1.875rem;
+    overflow: hidden;
 }

@@ -1,22 +1,64 @@
 import React, {Component} from 'react';
-import {Card, Button} from 'react-bootstrap';
+
+import { 
+    Container,
+    Row,
+    Col
+} from 'react-bootstrap';
+
+import TypewriterEffect from "react-typewriter-effect";
+import AOS from 'aos';
+
+import userpic from '../assets/resources/user.jpg';
+
+import Social from '../components/Social';
 
 import '../assets/scss/home.scss';
 
 class Home extends Component {
+    componentDidMount() {
+        AOS.init();
+    }
+
     render() {
         return (
-            <div className="container">
-                <h1>This is Home page</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros sapien, laoreet nec ligula quis, gravida accumsan nulla. 
-                    Vivamus aliquam porta viverra. Duis mattis mi non sem cursus faucibus. Sed nec nunc eget purus dignissim commodo a at turpis. 
-                    Nullam sodales est ut eros rhoncus, ut volutpat sapien dapibus. Nunc fringilla facilisis urna, a aliquet enim consequat vel. 
-                </p>
-                <p>
-                    Aliquam vel scelerisque est. Maecenas blandit tellus sed risus pretium viverra. Vestibu
-                </p>
-            </div>
+            <Container>
+                <Row>
+                    <Col lg={7}>
+                        <TypewriterEffect
+                            textStyle={
+                                { fontWeight: 'bold', fontSize: '5rem', marginBottom: '2rem', lineHeight: '1.2' }
+                            }
+                            startDelay={100}
+                            cursorColor="black"
+                            text="Hi there, I'm Madhura"
+                            typeSpeed={50}
+                            hideCursorAfterText={true}
+                        />
+
+                        <TypewriterEffect
+                            textStyle={
+                                { fontWeight: '400', fontSize: '1.2rem', marginBottom: '2rem' }
+                            }
+                            startDelay={1600}
+                            cursorColor="black"
+                            text="I'm a UI/UX Developer at Precise Communications Design LLC."
+                            typeSpeed={40}
+                            hideCursorAfterText={true}
+                        />
+                    </Col>
+                    <Col>
+                        <div className="imgwrp">
+                            <img src={userpic} className="img-fluid"/>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Social/>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }

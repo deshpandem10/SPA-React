@@ -1,0 +1,19 @@
+
+.social {
+    display: flex;
+    margin-top: 2rem;
+
+    a {
+        display: block;
+        margin-right: 0.875rem;
+        color: #f5725c;
+
+        i {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            color: darken(#f5725c, 15%);
+        }
+    }
+}
