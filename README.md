@@ -4,16 +4,48 @@
 
 The project involves use of **SASS / SCSS** for styling to maintain the consistency of the styles throughout and to make it easier to style the elements and the children using nesting feature of SASS/SCSS.
 
-The project also involves use of **Bootstrap 4 & Material Design** for making it easier to use Bootstrap classes for the element.
+```npm install sass --save-dev```
 
-**Bootstrap 4 & Material Design** can be very easily installed using Terminal window.
+The project also involves use of **React-Bootstrap 5.1.1**.
 
-```npm install --save mdbreact```
+**Bootstrap** can be very easily installed using Terminal window.
 
-Once the MDB React is installed from terminal window, we need to import the following dependencies in **src/index.js** file :
+```npm install react-bootstrap bootstrap```
+
+Once installed from terminal window, we need to import the following dependencies in **src/index.js** file :
 
 ```
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
 ```
+---
+
+**React Typing Effect** is a simple typing animation in ReactJS. We need to install the package for achieving it.
+
+```npm i react-typewriter-effect```
+
+Once installed, we can import the ReactTypingEffect from 'react-typing-effect'
+```
+import ReactTypingEffect from "react-typing-effect";
+```
+
+**AOS Animations** -
+
+```npm install aos --save```
+
+```
+import AOS from 'aos';
+
+(for class components)
+componentDidMount() {
+  AOS.init();
+}
+
+(for functional components)
+useEffect(() => {
+  AOS.init();
+}, []);
+```
+
+Make sure to add ```import "aos/dist/aos.css";``` in index.js
