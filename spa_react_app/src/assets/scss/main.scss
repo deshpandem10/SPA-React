@@ -15,6 +15,34 @@ html, body {
     line-height: 1.5;
 }
 
+a {
+    color: #292827;
+    position: relative;
+    padding-bottom: 0.25rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f5725c;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    &:hover {
+        color: #292827;
+    }
+}
+
 [data-grid~="container"] {
     max-width: calc(1920px + 10%);
     margin: 0 auto;
@@ -39,4 +67,24 @@ h1,h2,h3,h4,h5,h6 {
 .imgwrp {
     border-radius: 1.875rem;
     overflow: hidden;
+}
+
+.pagehead {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.sendMail {
+    font-weight: 500;
+    margin-top: 2rem;
+    line-height: 2.25;
+    
+    i {
+        font-size: 1.5rem;
+        margin-right: 0.75rem;
+
+        &:before {
+            vertical-align: middle;
+        }
+    }
 }
