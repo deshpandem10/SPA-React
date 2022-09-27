@@ -1,0 +1,38 @@
+
+//Media Queries
+
+@mixin big-desktop-up {
+    @media (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1441px) and (max-width: 1599px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width : 767px) {
+        @content;
+    }
+}
+
+@mixin small-mobile {
+    @media (max-width: 575px) {
+        @content;
+    }
+}

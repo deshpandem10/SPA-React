@@ -1,4 +1,6 @@
 
+@import './responsive';
+
 * {
     box-sizing: border-box;
     unicode-bidi: embed;
@@ -85,6 +87,92 @@ h1,h2,h3,h4,h5,h6 {
 
         &:before {
             vertical-align: middle;
+        }
+    }
+}
+
+.skills {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+@include desktop {
+    .typewriter1 {
+        .react-typewriter-text {
+            font-size: 4rem !important;
+        }
+    }
+}
+
+@include laptop {
+    .typewriter1 {
+        .react-typewriter-text {
+            font-size: 3.75rem !important;
+        }
+    }
+
+    .homepage {
+        .imgwrp {
+            margin: 0 1rem;
+        }
+    }
+
+    .pagehead {
+        font-size: 3.75rem;
+    }
+}
+
+@include tablet {
+    .typewriter1 {
+        .react-typewriter-text {
+            font-size: 3rem !important;
+        }
+    }
+
+    .pagehead {
+        font-size: 3rem;
+    }
+}
+
+@include mobile {
+    .typewriter1 {
+        .react-typewriter-text {
+            font-size: 2rem !important;
+            margin-bottom: 1rem !important;
+        }
+    }
+    .typewriter2 {
+        .react-typewriter-text {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .pagehead {
+        font-size: 2rem;
+    }
+}
+
+@include small-mobile {
+    .content {
+        padding: 2rem 0.5rem;
+    }
+
+    .typewriter1 {
+        .react-typewriter-text {
+            font-size: 1.75rem !important;
+        }
+    }
+    .typewriter2 {
+        .react-typewriter-text {
+            font-size: 1rem !important;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .homepage {
+        .imgwrp {
+            margin-bottom: 2rem;
         }
     }
 }

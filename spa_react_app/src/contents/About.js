@@ -16,15 +16,11 @@ class About extends Component {
                     I have extensive experience working with various front-end technologies and frameworks. 
                 </p>
                 <p>
-                    I am fluent in classic technologies - HTML, CSS, JavaScript and CSS framework Bootstrap and SASS/SCSS. 
+                    I am fluent in classic technologies - HTML, CSS, JavaScript and CSS framework Bootstrap.
                 </p>
                 <p>
                     I am currently taking efforts to gain expertise on JavaScript framework React.js and Redux. 
-                    What you are seeing now is my portfolio developed in React to showcase my skills.
-                </p>
-                <p>
-                    In my leisure time I like listening to Indian Classical music and play Harmonium. 
-                    I enjoy watching feel-good and Korean movies/TV series on Netflix {String.fromCodePoint('0x1f60A')}.
+                    What you are seeing now is my portfolio developed in React in an attempt to showcase my skills and work experience.
                 </p>
 
                 <div className='skills'>
@@ -34,6 +30,11 @@ class About extends Component {
                         <Skills />
                     </div>
                 </div>
+
+                <p>
+                    In my leisure time I like listening to Indian Classical music and play Harmonium (a musical instrument). 
+                    I enjoy watching feel-good and suspense movies along with K-Drama on Netflix {String.fromCodePoint('0x1f60A')}.
+                </p>
             </div>
         );
     }
