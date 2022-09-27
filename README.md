@@ -1,5 +1,12 @@
 # SPA-React
 
+## Getting Started
+1. Clone or fork the project
+2. Install all the required dependencies - ```npm install```
+3. Run the project - ```npm start```
+
+---
+
 ## This Repo is a simple React SPA (Single Page Application) development.
 
 The project involves use of **SASS / SCSS** for styling to maintain the consistency of the styles throughout and to make it easier to style the elements and the children using nesting feature of SASS/SCSS.
