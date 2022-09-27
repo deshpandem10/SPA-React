@@ -1,0 +1,26 @@
+
+.smallCard {
+    border: 1px solid #f5725c;
+    border-radius: 8px;
+    background: #fff;
+    padding: 0.75rem;
+
+    .icon {
+        text-align: center;
+
+        i {
+            font-size: 2.875rem;
+            color: #f5725c;
+        }
+    }
+
+    .body {
+        p {
+            margin-bottom: 0;
+            font-size: 0.875rem;
+            text-align: center; 
+            color: #f5725c;
+            font-weight: 600;
+        }
+    }
+}

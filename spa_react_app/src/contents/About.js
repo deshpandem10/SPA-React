@@ -1,18 +1,39 @@
 import React, { Component } from 'react';
 
+import Skills from '../components/Skills';
+
 class About extends Component {
     render () {
         return (
             <div className="container">
-                <h1>This is Stuff page</h1>
+                <h1 className='pagehead'>About me</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros sapien, laoreet nec ligula quis, gravida accumsan nulla. 
-                    Vivamus aliquam porta viverra. Duis mattis mi non sem cursus faucibus. Sed nec nunc eget purus dignissim commodo a at turpis. 
-                    Nullam sodales est ut eros rhoncus, ut volutpat sapien dapibus. Nunc fringilla facilisis urna, a aliquet enim consequat vel. 
+                    Hey, I'm Madhura!
                 </p>
                 <p>
-                    Aliquam vel scelerisque est. Maecenas blandit tellus sed risus pretium viverra. Vestibu
+                    I'm a passionate UI/UX, Frontend Developer working at  
+                    <strong><a target='_blank' href='https://www.tobeprecise.com/'> Precise Communications Design LLC</a></strong>.
+                    I have extensive experience working with various front-end technologies and frameworks. 
                 </p>
+                <p>
+                    I am fluent in classic technologies - HTML, CSS, JavaScript and CSS framework Bootstrap and SASS/SCSS. 
+                </p>
+                <p>
+                    I am currently taking efforts to gain expertise on JavaScript framework React.js and Redux. 
+                    What you are seeing now is my portfolio developed in React to showcase my skills.
+                </p>
+                <p>
+                    In my leisure time I like listening to Indian Classical music and play Harmonium. 
+                    I enjoy watching feel-good and Korean movies/TV series on Netflix {String.fromCodePoint('0x1f60A')}.
+                </p>
+
+                <div className='skills'>
+                    <p>My professional skillset include : </p>
+                    
+                    <div className='d-flex flex-wrap'>
+                        <Skills />
+                    </div>
+                </div>
             </div>
         );
     }

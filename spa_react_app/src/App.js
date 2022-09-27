@@ -76,7 +76,7 @@ class App extends Component {
                     <header>
                         <div href="" className="logo my-auto">
                             {/* <img src={logo} alt="logo"/> */}
-                            <h4>Lorem Ipsum</h4>
+                            <h2>MD</h2>
                         </div>
                         <ul className="navbar">
                             <li>
