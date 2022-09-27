@@ -56,3 +56,9 @@ useEffect(() => {
 ```
 
 Make sure to add ```import "aos/dist/aos.css";``` in index.js
+
+---
+
+Unicode for emojis - https://unicode.org/emoji/charts/full-emoji-list.html
+
+---
