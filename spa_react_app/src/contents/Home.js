@@ -9,7 +9,7 @@ import {
 import TypewriterEffect from "react-typewriter-effect";
 import AOS from 'aos';
 
-import userpic from '../assets/resources/user.jpg';
+import userpic from '../assets/resources/user.png';
 
 import Social from '../components/Social';
 
