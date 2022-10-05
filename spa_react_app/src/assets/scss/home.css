@@ -1,0 +1,9 @@
+.card-set .mini-card {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 18rem;
+  margin-right: 2rem;
+}
+.card-set .mini-card:hover {
+  box-shadow: -2rem 2rem 2rem -2rem #000;
+}/*# sourceMappingURL=home.css.map */

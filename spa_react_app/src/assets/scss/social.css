@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  margin-top: 2rem;
+}
+.social a {
+  display: block;
+  margin-right: 0.875rem;
+  color: #f5725c;
+}
+.social a i {
+  font-size: 2rem;
+}
+.social a:hover {
+  color: #f13414;
+}
+.social a:hover:after {
+  display: none;
+}/*# sourceMappingURL=social.css.map */

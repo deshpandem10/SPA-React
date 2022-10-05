@@ -37,3 +37,21 @@
         }
     }
 }
+
+.wideCard {
+    box-shadow: none !important;
+    border: 1px solid #f3f3f3 !important;
+    margin-bottom: 2rem;
+
+    .imgwrp {
+        text-align: center;
+    }
+
+    p {
+        br {
+            content: '';
+            margin-bottom: 0.875rem;
+            display: block;
+        }
+    }
+}
