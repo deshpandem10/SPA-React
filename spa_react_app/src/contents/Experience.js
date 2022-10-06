@@ -5,15 +5,15 @@ import { Container } from 'react-bootstrap';
 import WideCard from '../components/WideCard';
 
 import precise_logo from '../assets/resources/logos/precise_logo.png';
-import inaxus_logo from '../assets/resources/logos/inaxus_logo.jpg';
-import cloudchain_logo from '../assets/resources/logos/cloudchain_logo.jpg';
+import inaxus_logo from '../assets/resources/logos/inaxus_logo.png';
+import cloudchain_logo from '../assets/resources/logos/cloudchain_logo.png';
 import kpit_logo from '../assets/resources/logos/kpit_logo.png';
 
 class Experience extends Component {
     render () {
         return (
             <Container>
-                <div>
+                <div className='expedu_section'>
                     <h1 className='pagesubhead'>Work Experience</h1>
 
                     <WideCard 
@@ -56,6 +56,12 @@ class Experience extends Component {
                             tristique senectus et netus et malesuada fames ac turpi`
                         ]}
                     />
+                </div>
+                <div className='expedu_section mb-0'>
+                    <h1 className='pagesubhead'>Education</h1>
+
+                    <h2>Bachelor of Engineering (Electronics)</h2>
+                    <p>Pune University -- 2011 - 2015</p>
                 </div>
             </Container>
         )

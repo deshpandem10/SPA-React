@@ -94,6 +94,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+.expedu_section {
+  margin-bottom: 4rem;
+}
+
 @media (min-width: 1441px) and (max-width: 1599px) {
   .typewriter1 .react-typewriter-text {
     font-size: 4rem !important;
