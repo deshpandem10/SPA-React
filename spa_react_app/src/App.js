@@ -72,8 +72,8 @@ class App extends Component {
       return (
         <HashRouter>
             <div>
-                <Container>
-                    <header>
+                <header>
+                    <Container>
                         <div href="" className="logo my-auto">
                             {/* <img src={logo} alt="logo"/> */}
                             <h2>MD</h2>
@@ -92,8 +92,8 @@ class App extends Component {
                                 <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
                             </li>
                         </ul>
-                    </header>
-                </Container>
+                    </Container>
+                </header>
 
                 <div className="clear"></div>
 

@@ -1,5 +1,6 @@
 
 @import './main.scss';
+@import './responsive';
 
 .logo {
     img {
@@ -12,9 +13,12 @@ header {
     z-index: 997;
     padding: 1.5rem 0 1.5rem 0;
     width: 100%;
-    display: flex !important;
-    justify-content: space-between;
-    align-items: flex-end;
+
+    .container {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 
     .logo {
         color: #f5725c;
@@ -28,11 +32,14 @@ header {
     &.header-scrolled {
         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
         background: #fff;
-        padding: 0 2rem 1rem 2rem;
         position: fixed;
         top: 0;
         max-width: calc(1920px + 10%);
-        padding: 0.25rem 0 0.25rem 0;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+
+        .container {
+            max-width: unset;
+        }
     }
 
     ul.navbar {
@@ -73,5 +80,11 @@ header {
                 margin-right: 0;
             }
         }
+    }
+}
+
+@include laptop {
+    header {
+        padding: 1rem 0 1rem 0;
     }
 }

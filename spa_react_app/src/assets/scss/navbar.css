@@ -14,6 +14,9 @@ html, body {
   line-height: 1.5;
 }
 
+/* .container {
+    display: initial;
+} */
 a {
   color: #292827;
   position: relative;
@@ -58,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #f3f3f3;
   border-radius: 16px;
   padding: 4rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .imgwrp {
@@ -97,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
 .expedu_section {
   margin-bottom: 4rem;
 }
+.expedu_section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
 
 @media (min-width: 1441px) and (max-width: 1599px) {
   .typewriter1 .react-typewriter-text {
@@ -105,13 +113,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
   .typewriter1 .react-typewriter-text {
-    font-size: 3.75rem !important;
+    font-size: 3.5rem !important;
+  }
+  .content {
+    min-height: 50vh;
+    padding: 2.5rem 2rem;
   }
   .homepage .imgwrp {
     margin: 0 1rem;
   }
   .pagehead {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 1199px) {
@@ -158,6 +170,8 @@ header {
   z-index: 997;
   padding: 1.5rem 0 1.5rem 0;
   width: 100%;
+}
+header .container {
   display: flex !important;
   justify-content: space-between;
   align-items: flex-end;
@@ -172,11 +186,13 @@ header .logo h2 {
 header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   background: #fff;
-  padding: 0 2rem 1rem 2rem;
   position: fixed;
   top: 0;
   max-width: calc(1920px + 10%);
-  padding: 0.25rem 0 0.25rem 0;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+header.header-scrolled .container {
+  max-width: unset;
 }
 header ul.navbar {
   list-style: none;
@@ -211,4 +227,10 @@ header ul.navbar li a.active {
 }
 header ul.navbar li:last-child {
   margin-right: 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    padding: 1rem 0 1rem 0;
+  }
 }/*# sourceMappingURL=navbar.css.map */

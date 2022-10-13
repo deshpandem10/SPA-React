@@ -42,4 +42,12 @@
   content: "";
   margin-bottom: 0.875rem;
   display: block;
+}
+
+@media (max-width: 991px) {
+  .wideCard .imgwrp {
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=card.css.map */

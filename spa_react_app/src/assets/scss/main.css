@@ -14,6 +14,9 @@ html, body {
   line-height: 1.5;
 }
 
+/* .container {
+    display: initial;
+} */
 a {
   color: #292827;
   position: relative;
@@ -110,13 +113,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
   .typewriter1 .react-typewriter-text {
-    font-size: 3.75rem !important;
+    font-size: 3.5rem !important;
+  }
+  .content {
+    min-height: 50vh;
+    padding: 2.5rem 2rem;
   }
   .homepage .imgwrp {
     margin: 0 1rem;
   }
   .pagehead {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 1199px) {
