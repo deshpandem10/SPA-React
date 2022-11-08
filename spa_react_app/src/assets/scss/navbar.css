@@ -229,8 +229,80 @@ header ul.navbar li:last-child {
   margin-right: 0;
 }
 
+.mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bx-x {
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   header {
     padding: 1rem 0 1rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-nav-toggle {
+    color: #C85946;
+    display: block;
+    top: 15px;
+  }
+  .mobile-nav-toggle.bi-x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+  }
+  .navbar-mobile {
+    width: 100%;
+    position: fixed !important;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(63, 73, 83, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .navbar-mobile ul {
+    width: 95%;
+    display: block !important;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .navbar-mobile ul li {
+    padding: 0.65rem 1.5rem;
+  }
+  .navbar-mobile ul li a {
+    font-size: 0.875rem;
+    padding-bottom: 0.3rem;
+  }
+  .navbar {
+    padding: 0 !important;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .navbar-mobile ul {
+    width: 90%;
   }
 }/*# sourceMappingURL=navbar.css.map */

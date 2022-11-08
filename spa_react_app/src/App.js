@@ -66,6 +66,25 @@ class App extends Component {
             window.addEventListener('load', headerScrolled)
             onscroll(document, headerScrolled)
         }
+
+        /**
+         * Mobile nav toggle
+         */
+        on('click', '.mobile-nav-toggle', function(e) {
+            select('#navbar').classList.toggle('navbar-mobile')
+            this.classList.toggle('bx-list-ul')
+            this.classList.toggle('bx-x')
+        })
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on('click', '.navbar .dropdown > a', function(e) {
+            if (select('#navbar').classList.contains('navbar-mobile')) {
+                e.preventDefault()
+                this.nextElementSibling.classList.toggle('dropdown-active')
+            }
+        }, true)
     }
 
     render() {
@@ -78,20 +97,23 @@ class App extends Component {
                             {/* <img src={logo} alt="logo"/> */}
                             <h2>MD</h2>
                         </div>
-                        <ul className="navbar">
-                            <li>
-                                <NavLink to="/home" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/expedu" className={({ isActive }) => isActive ? "active" : ""}>Work Experience &amp; Education</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
-                            </li>
-                        </ul>
+                        <nav id="navbar" className="navbar">
+                            <ul>
+                                <li>
+                                    <NavLink to="/home" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/expedu" className={({ isActive }) => isActive ? "active" : ""}>Work Experience &amp; Education</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
+                                </li>
+                            </ul>
+                        </nav>
+                        <i class="bx bx-list-ul mobile-nav-toggle"></i>
                     </Container>
                 </header>
 
