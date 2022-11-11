@@ -194,7 +194,10 @@ header.header-scrolled {
 header.header-scrolled .container {
   max-width: unset;
 }
-header ul.navbar {
+header .navbar {
+  box-shadow: none;
+}
+header .navbar ul {
   list-style: none;
   display: flex;
   margin: 0;
@@ -203,10 +206,10 @@ header ul.navbar {
   border: none;
   box-shadow: none !important;
 }
-header ul.navbar li {
+header .navbar li {
   margin: 1rem;
 }
-header ul.navbar li a {
+header .navbar li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -219,13 +222,13 @@ header ul.navbar li a {
   text-transform: uppercase;
   line-height: 2;
 }
-header ul.navbar li a:hover {
+header .navbar li a:hover {
   text-decoration: none;
 }
-header ul.navbar li a.active {
+header .navbar li a.active {
   border-bottom: 2px solid #f5725c;
 }
-header ul.navbar li:last-child {
+header .navbar li:last-child {
   margin-right: 0;
 }
 

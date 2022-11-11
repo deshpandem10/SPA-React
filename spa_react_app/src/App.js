@@ -113,7 +113,7 @@ class App extends Component {
                                 </li>
                             </ul>
                         </nav>
-                        <i class="bx bx-list-ul mobile-nav-toggle"></i>
+                        <i className="bx bx-list-ul mobile-nav-toggle"></i>
                     </Container>
                 </header>
 

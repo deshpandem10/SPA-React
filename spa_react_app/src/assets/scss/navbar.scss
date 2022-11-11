@@ -42,14 +42,18 @@ header {
         }
     }
 
-    ul.navbar {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        border: none;
-        box-shadow: none !important;
+    .navbar {
+        box-shadow: none;
+        
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            border: none;
+            box-shadow: none !important;
+        }
     
         li {
             margin: 1rem;
